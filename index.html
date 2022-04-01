@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Amazon_icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f8c1fa29ab.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="amazon-logo-s3f.png" />
+
+        <span id="location">
+          <a href="#">
+            Hello<br /><i class="fa-solid fa fa-location-dot"></i>Select your
+            address
+          </a>
+        </span>
+        <span class="none">
+          <form name="search" id="search">
+            <div class="text"><a href="#">All</a></div>
+            <div class="enter"><input type="text" /></div>
+            <i class="fa fa-solid fa fa-magnifying-glass"></i>
+          </form>
+        </span>
+        <span class="acc"><a href="#">Your Account</a></span>
+        <span class="ret">Orders and Returns</span>
+        <span class="cart">View Your Cart</span>
+      </nav>
+    </header>
+    <center>
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <div class="slideimages first">
+            <img src="61r0jKPA0DL._SX3000_.jpg" />
+          </div>
+          <div class="slideimages">
+            <img src="61VYtNsTSlL._SX3740_.jpg" />
+          </div>
+          <div class="slideimages">
+            <img src="61yYX4j5gtL._SX3740_.jpg" />
+          </div>
+          <div class="slideimages">
+            <img src="61FuWeCuGCL._SX3740_.jpg" />
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+        </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+      </div>
+    </center>
+    <div class="browse">
+      <h1>Inspired by your browsing history</h1>
+      <div class="list">
+        <div class="product">
+          <div><img src="Unknown.jpeg" /></div>
+          <div class="special">
+            YONEX MAVIS 350<br />
+            Nylon Shuttlecock (Pack of 6) - Made in Japan
+          </div>
+        </div>
+        <div class="product">
+          <div><img src="71snlkNDRBL._AC_UL320_SR320,320_.jpg" /></div>
+          <div>
+            YONEX NANORAY LIGHT 18i<br />
+            Graphite Badminton Racquet (77g, 30 lbs Tension) Yonex Nanoray Light
+            18i Graphite Badminton Racquet (77g, 30 lbs Tension)
+          </div>
+        </div>
+
+        <div class="product">
+          <div><img src="61u6Lojv9pL._AC_UL320_SR320,320_.jpg" /></div>
+          <div>
+            YONEX NANORAY LIGHT 18i<br />
+            Graphite Badminton Racquet (77g, 30 lbs Tension) Yonex Nanoray Light
+            18i Graphite Badminton Racquet (77g, 30 lbs Tension)
+          </div>
+        </div>
+
+        <div class="product">
+          <div><img src="41z1Xo7JFYS._AC_UL320_SR320,320_.jpg" /></div>
+          <div>
+            YONEX NANORAY LIGHT 18i<br />
+            Graphite Badminton Racquet (77g, 30 lbs Tension) Yonex Nanoray Light
+            18i Graphite Badminton Racquet (77g, 30 lbs Tension)
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 5000);
+    </script>
+  </body>
+
+  <footer>
+    <ul>
+      <li>
+        <a href="#" class="link" style="color: white"
+          >Conditions of Use & Sale</a
+        >
+      </li>
+      <li><a href="#" class="link" style="color: white">Privacy Notice</a></li>
+      <li>
+        <a href="#" class="link" style="color: white">Interest-Based Ads</a>
+      </li>
+      <li>
+        <a href="#" class="link" style="color: white"
+          >&copy 1996-2022, Amazon.com, Inc. or its affiliates</a
+        >
+      </li>
+    </ul>
+  </footer>
+</html>
